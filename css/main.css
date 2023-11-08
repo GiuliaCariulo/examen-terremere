@@ -44,19 +44,41 @@ video {
 }
 
 body {
+  font-family: "cantarell", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: var(--pink);
   background-color: var(--gray);
 }
 
+html {
+  background-color: var(--pink);
+}
+
 header {
   background-color: var(--darkgray);
+  height: 80px;
+  padding: 15px 0;
 }
+
 .navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-content: center;
+}
+
+.navigation a {
+  border-radius: 50px;
+  border: 1px solid var(--pink);
+  padding: 12px 90px;
 }
 
 a {
   color: var(--pink);
+  text-decoration: none;
+}
+h1 {
+  font-family: "eight";
+  font-weight: 400;
 }
