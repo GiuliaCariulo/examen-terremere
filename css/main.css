@@ -3,6 +3,10 @@
 // ==================================== */
 
 :root {
+  --white: #e5e5e5;
+  --pink: #fcb7ed;
+  --gray: #323743;
+  --darkgray: #2c303a;
 }
 
 /* ====================================
@@ -39,14 +43,20 @@ video {
   vertical-align: middle;
 }
 
-.row + .row {
-  margin-top: 16px;
+body {
+  color: var(--pink);
+  background-color: var(--gray);
 }
 
-.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
+header {
+  background-color: var(--darkgray);
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+a {
+  color: var(--pink);
 }
