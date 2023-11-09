@@ -82,3 +82,20 @@ h1 {
   font-family: "eight";
   font-weight: 400;
 }
+
+.intro {
+  text-align: center;
+}
+/* 
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+} */
+
+.nav img {
+  display: block;
+  width: 100%;
+  border-radius: 50px;
+}
