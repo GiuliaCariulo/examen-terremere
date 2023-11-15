@@ -111,7 +111,7 @@ h1 {
   object-fit: cover;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .country {
     border: none;
     border-radius: 0;
