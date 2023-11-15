@@ -89,24 +89,24 @@ h1 {
   padding: 100px 0 130px;
 }
 
-.nav img {
-  border-radius: 50px;
-}
-
 .country {
-  width: min-content;
-  border-radius: 50px;
+  border-radius: 200px;
+  overflow: hidden;
   border: 1px solid var(--pink);
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
 }
+
 .country-title {
-  align-self: center;
-  padding: 40px;
+  width: 50%;
+  font-size: 20px;
 }
 
 .country img {
+  width: 50%;
+  border-radius: 200px;
   aspect-ratio: 1.56;
   object-fit: cover;
 }
@@ -114,9 +114,13 @@ h1 {
 @media (min-width: 992px) {
   .country {
     border: none;
+    border-radius: 0;
   }
   .country img {
+    width: 100%;
+    border-radius: 50px;
     aspect-ratio: 1;
+    object-fit: cover;
   }
   .country-title {
     display: none;
