@@ -81,6 +81,13 @@ a {
   text-decoration: none;
 }
 
+.burger-menu {
+  position: absolute;
+  right: 23px;
+  top: 23px;
+  display: none;
+}
+
 h1 {
   font-family: "eight";
   font-weight: 400;
@@ -106,6 +113,9 @@ h1 {
   }
   header {
     background-color: var(--gray);
+  }
+  .burger-menu {
+    display: block;
   }
 }
 
