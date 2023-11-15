@@ -81,21 +81,44 @@ a {
 h1 {
   font-family: "eight";
   font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .intro {
   text-align: center;
+  padding: 100px 0 130px;
 }
-/* 
-.nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-} */
 
 .nav img {
-  display: block;
-  width: 100%;
   border-radius: 50px;
+}
+
+.country {
+  width: min-content;
+  border-radius: 50px;
+  border: 1px solid var(--pink);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.country-title {
+  align-self: center;
+  padding: 40px;
+}
+
+.country img {
+  aspect-ratio: 1.56;
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .country {
+    border: none;
+  }
+  .country img {
+    aspect-ratio: 1;
+  }
+  .country-title {
+    display: none;
+  }
 }
