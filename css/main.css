@@ -162,3 +162,15 @@ h1 {
     display: none;
   }
 }
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h2,
+.title img {
+  width: 50%;
+}
