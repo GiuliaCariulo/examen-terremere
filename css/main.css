@@ -164,14 +164,21 @@ h1 {
 }
 
 .title,
-.button,
 .center,
-.text {
+.img-height {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 0;
+  height: 100%;
+}
+.img-height img {
+  height: 100%;
+  object-fit: cover;
+}
+section img {
+  border-radius: 50px;
 }
 
 .title h2 {
@@ -180,21 +187,6 @@ h1 {
   letter-spacing: 38px;
   text-transform: uppercase;
   text-align: center;
-}
-
-.title h2,
-.title img,
-.button img,
-.center,
-.text-part,
-.img-part {
-  width: 50%;
-  border-radius: 50px;
-}
-
-.title img {
-  aspect-ratio: 2.17;
-  object-fit: cover;
 }
 
 .button-menu {
@@ -209,6 +201,10 @@ h1 {
   align-items: center;
 }
 
+.text-part p {
+  margin: 35px 0;
+}
+
 @media (max-width: 991px) {
   .title h2 {
     letter-spacing: 30px;
@@ -216,26 +212,11 @@ h1 {
 }
 
 @media (max-width: 767px) {
-  .title img,
-  .button img,
-  .text img {
+  section img {
     display: none;
   }
   .title h2 {
     font-size: 23px;
     letter-spacing: 27px;
   }
-}
-
-.text-part p {
-  margin: 35px 0;
-}
-
-.text img {
-  border-radius: 50px;
-}
-
-.text-img {
-  height: max-content;
-  object-fit: fill;
 }
