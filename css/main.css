@@ -167,12 +167,23 @@ h1 {
 .pattern {
   height: 90px;
   width: auto;
-  background-image: url(/img/france/french-pattern.png);
   background-size: contain;
 }
 
-.content {
-  padding: 30px 0 50px;
+@media (min-width: 576px) {
+  .pattern {
+    height: 160px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pattern {
+    height: 260px;
+  }
+}
+
+.pattern-france {
+  background-image: url(/img/france/french-pattern.png);
 }
 
 .title,
@@ -215,18 +226,6 @@ section img {
 
 .text-part p {
   margin: 35px 0;
-}
-
-@media (min-width: 576px) {
-  .pattern {
-    height: 160px;
-  }
-}
-
-@media (min-width: 768px) {
-  .pattern {
-    height: 260px;
-  }
 }
 
 @media (max-width: 991px) {
