@@ -165,7 +165,8 @@ h1 {
 
 .title,
 .button,
-.center {
+.center,
+.text {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -184,7 +185,9 @@ h1 {
 .title h2,
 .title img,
 .button img,
-.center {
+.center,
+.text-part,
+.img-part {
   width: 50%;
   border-radius: 50px;
 }
@@ -212,7 +215,7 @@ h1 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .title img,
   .button img,
   .text img {
@@ -222,4 +225,17 @@ h1 {
     font-size: 23px;
     letter-spacing: 27px;
   }
+}
+
+.text-part p {
+  margin: 35px 0;
+}
+
+.text img {
+  border-radius: 50px;
+}
+
+.text-img {
+  height: max-content;
+  object-fit: fill;
 }
