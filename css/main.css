@@ -97,7 +97,7 @@ h1 {
 
 .intro {
   text-align: center;
-  padding: 50px 0;
+  padding-top: 50px;
 }
 
 .intro p,
@@ -108,9 +108,6 @@ h1 {
 @media (max-width: 767px) {
   .navigation {
     display: none;
-  }
-  .intro {
-    padding: 50px 0 65px;
   }
   header {
     background-color: var(--gray);
@@ -168,6 +165,7 @@ h1 {
   height: 90px;
   width: auto;
   background-size: contain;
+  margin: 50px 0 30px;
 }
 
 @media (min-width: 576px) {
@@ -184,6 +182,34 @@ h1 {
 
 .pattern-france {
   background-image: url(/img/france/french-pattern.png);
+}
+
+.pattern-japan {
+  background-image: url(/img/japon/japanese-pattern.png);
+}
+
+.pattern-ethiopian {
+  background-image: url(/img/éthiopie/ethiopian-pattern.png);
+}
+
+.pattern-greek {
+  background-image: url(/img/grèce/greek-pattern.png);
+}
+
+.pattern-mexican {
+  background-image: url(/img/mexique/mexican-pattern.png);
+}
+
+.pattern-libanese {
+  background-image: url(/img/liban/libanese-pattern.png);
+}
+
+.pattern-maroccan {
+  background-image: url(/img/maroc/moroccan-pattern.png);
+}
+
+.pattern-indian {
+  background-image: url(/img/inde/indian-pattern.png);
 }
 
 .title,
