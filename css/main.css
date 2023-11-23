@@ -212,6 +212,10 @@ h1 {
   background-image: url(/img/inde/indian-pattern.png);
 }
 
+.pattern-end {
+  background-image: url(/img/zfooter-pattern.png);
+}
+
 .title,
 .center,
 .img-height {
@@ -274,4 +278,9 @@ section img {
   .carousel {
     display: none;
   }
+}
+
+footer {
+  background-color: var(--white);
+  color: var(--darkgray);
 }
