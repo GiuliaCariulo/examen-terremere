@@ -342,6 +342,11 @@ footer a {
   text-align: center;
 }
 
+.hours p,
+.day p {
+  margin-bottom: 5px;
+}
+
 @media (min-width: 768px) {
   .footer-center {
     flex-direction: row;
