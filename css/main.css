@@ -118,6 +118,12 @@ h1 {
 }
 
 @media (min-width: 1200px) {
+  .nav a {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
   .intro p,
   .nav {
     margin-bottom: 80px;
