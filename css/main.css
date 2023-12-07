@@ -7,6 +7,7 @@
   --pink: #fcb7ed;
   --gray: #323743;
   --darkgray: #2c303a;
+  --my-gradient: linear-gradient(to left, var(--darkgray), #2c303a00);
 }
 
 /* ====================================
@@ -133,6 +134,35 @@ h1 {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
+}
+
+.country-overlay {
+  position: absolute;
+  background-image: var(--my-gradient);
+  inset: 0;
+  border-radius: 50px;
+  box-shadow: -1px 0 var(--pink) inset;
+  opacity: 0;
+}
+
+.country:hover .country-overlay {
+  opacity: 1;
+}
+
+.overlay-title {
+  position: absolute;
+  right: 10px;
+  bottom: 45px;
+  text-align: right;
+}
+
+.line {
+  width: 120px;
+  height: 1px;
+  background-color: var(--pink);
+  position: absolute;
+  right: -9px;
 }
 
 .country-title {
@@ -145,12 +175,20 @@ h1 {
   border-radius: 200px;
   aspect-ratio: 1.56;
   object-fit: cover;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .country-overlay {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
   .country {
     border: none;
     border-radius: 0;
+    margin-bottom: 25px;
   }
   .country img {
     width: 100%;
