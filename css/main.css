@@ -96,7 +96,7 @@ a {
   transition: opacity 0.3s;
 }
 
-.background-blur-menu {
+.background-blur-burger {
   background-color: var(--grayblur);
   backdrop-filter: blur(4px);
   height: 100vh;
@@ -121,7 +121,7 @@ a {
   border-radius: 25px;
 }
 
-.background-blur-menu.is-active {
+.background-blur-burger.is-active {
   opacity: 1;
   pointer-events: auto;
 }
