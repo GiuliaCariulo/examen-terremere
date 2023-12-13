@@ -502,3 +502,12 @@ footer a {
     gap: 30px;
   }
 }
+
+.carousel {
+  max-width: 500px;
+}
+
+.carousel .slide img {
+  width: 100%;
+  display: none;
+}
