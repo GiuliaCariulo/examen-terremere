@@ -6,6 +6,7 @@
   --white: #e5e5e5;
   --pink: #fcb7ed;
   --gray: #323743;
+  --grayblur: rgba(50, 55, 67, 0.8);
   --darkgray: #2c303a;
   --my-gradient: linear-gradient(to left, var(--darkgray), #2c303a00);
 }
@@ -58,6 +59,7 @@ header {
   padding: 20px 0;
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 @media (min-width: 1200px) {
@@ -86,10 +88,59 @@ a {
 }
 
 .burger-menu {
-  position: absolute;
+  position: fixed;
   right: 23px;
   top: 23px;
   display: none;
+  z-index: 1;
+  transition: opacity 0.3s;
+}
+
+.background-blur-menu {
+  background-color: var(--grayblur);
+  backdrop-filter: blur(4px);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+
+.background-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 230px;
+}
+
+.menu {
+  font-size: 20px;
+  font-weight: 500;
+  background-color: var(--gray);
+  opacity: 0;
+  pointer-events: none;
+  padding: 150px 5px 50px;
+}
+
+.menu.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu a {
+  padding: 10px 20px;
+  border: 1px solid var(--pink);
+  border-radius: 50px;
+  width: 255px;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .background-blur-menu {
+    display: none;
+  }
 }
 
 h1 {
