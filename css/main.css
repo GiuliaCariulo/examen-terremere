@@ -102,6 +102,8 @@ a {
   height: 100vh;
   width: 100vw;
   position: fixed;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .background-menu {
@@ -115,12 +117,11 @@ a {
   font-size: 20px;
   font-weight: 500;
   background-color: var(--gray);
-  opacity: 0;
-  pointer-events: none;
   padding: 150px 5px 50px;
+  border-radius: 25px;
 }
 
-.menu.is-active {
+.background-blur-menu.is-active {
   opacity: 1;
   pointer-events: auto;
 }
