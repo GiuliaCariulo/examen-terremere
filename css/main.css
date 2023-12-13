@@ -279,39 +279,39 @@ h1 {
 }
 
 .pattern-france {
-  background-image: url(/img/france/french-pattern.png);
+  background-image: url(../img/france/french-pattern.png);
 }
 
 .pattern-japan {
-  background-image: url(/img/japon/japanese-pattern.png);
+  background-image: url(../img/japon/japanese-pattern.png);
 }
 
 .pattern-ethiopian {
-  background-image: url(/img/eethiopie/ethiopian-pattern.png);
+  background-image: url(../img/eethiopie/ethiopian-pattern.png);
 }
 
 .pattern-greek {
-  background-image: url(/img/greece/greek-pattern.png);
+  background-image: url(../img/greece/greek-pattern.png);
 }
 
 .pattern-mexican {
-  background-image: url(/img/mexique/mexican-pattern.png);
+  background-image: url(../img/mexique/mexican-pattern.png);
 }
 
 .pattern-libanese {
-  background-image: url(/img/liban/libanese-pattern.png);
+  background-image: url(../img/liban/libanese-pattern.png);
 }
 
 .pattern-maroccan {
-  background-image: url(/img/maroc/moroccan-pattern.png);
+  background-image: url(../img/maroc/moroccan-pattern.png);
 }
 
 .pattern-indian {
-  background-image: url(/img/inde/indian-pattern.png);
+  background-image: url(../img/inde/indian-pattern.png);
 }
 
 .pattern-end {
-  background-image: url(/img/zfooter-pattern.png);
+  background-image: url(../img/zfooter-pattern.png);
 }
 
 .title,
