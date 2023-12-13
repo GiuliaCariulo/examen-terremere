@@ -64,7 +64,7 @@ header {
 
 @media (max-width: 767px) {
   header {
-    height: 60px;
+    height: 70px;
   }
 }
 
@@ -99,7 +99,6 @@ a {
   top: 23px;
   display: none;
   z-index: 1;
-  transition: opacity 0.3s;
 }
 
 .background-blur-burger {
@@ -110,6 +109,7 @@ a {
   position: fixed;
   opacity: 0;
   pointer-events: none;
+  transition: opacity 0.3s;
 }
 
 .background-menu {
@@ -325,6 +325,10 @@ h1 {
   height: 100%;
 }
 
+.center.no-height {
+  height: auto;
+}
+
 .img-height img {
   height: 100%;
   object-fit: cover;
@@ -353,7 +357,30 @@ h2 {
   align-items: center;
 }
 
+.menu-mobile.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .menu-mobile {
+  text-align: center;
+  font-size: 16px;
+  line-height: normal;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+h3 {
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.menu-mobile li {
+  font-weight: 500;
+  margin: 5px 0;
 }
 
 .text-part p {
